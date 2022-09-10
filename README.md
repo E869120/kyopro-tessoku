@@ -20,7 +20,9 @@
 * [正誤表（8～10章）：最終更新日 2022/9/10](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
 
 ### コード
-* 発売日までに作成される見通しです。
+* [C++ のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/cpp)
+* [Python のプログラム（40% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
+* JAVA のプログラムは準備中
 
 ### 演習問題の解答
 * 発売日までに作成される見通しです。
