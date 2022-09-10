@@ -35,6 +35,7 @@ class Main {
 		return Answer;
 	}
 
+	// a ÷ b を m で割った余りを返す関数
 	static long Division(long a, long b, long m) {
 		return (a * Power(b, m - 2, m)) % m;
 	}
