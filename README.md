@@ -15,7 +15,9 @@
 本リポジトリの目次は以下の通りです。
 
 ### 正誤表
-* 発売日までに作成される見通しです。
+* [正誤表（1～4章）：最終更新日 2022/9/10](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap1-4.md)
+* [正誤表（5～7章）：最終更新日 2022/9/10](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap5-7.md)
+* [正誤表（8～10章）：最終更新日 2022/9/10](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
 
 ### コード
 * 発売日までに作成される見通しです。
