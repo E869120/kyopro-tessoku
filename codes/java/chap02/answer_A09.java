@@ -4,7 +4,7 @@ class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// 入力（前半部分）
+		// 入力
 		int H = sc.nextInt();
 		int W = sc.nextInt();
 		int N = sc.nextInt();
@@ -36,7 +36,7 @@ class Main {
 		for (int i = 1; i <= H; i++) {
 			for (int j = 1; j <= W; j++) Z[i][j] = Z[i][j - 1] + X[i][j];
 		}
-	  for (int j = 1; j <= W; j++) {
+		for (int j = 1; j <= W; j++) {
 			for (int i = 1; i <= H; i++) Z[i][j] = Z[i - 1][j] + Z[i][j];
 		}
 
