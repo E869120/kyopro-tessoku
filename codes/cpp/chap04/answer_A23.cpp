@@ -41,6 +41,7 @@ int main() {
 	}
 
 	// 出力（すべて選んだ場合の整数表現は 2^N-1）
-	cout << dp[M][(1 << N) - 1] << endl;
+	if (dp[M][(1 << N) - 1] == 1'000'000'000) cout << "-1" << endl;
+	else cout << dp[M][(1 << N) - 1] << endl;
 	return 0;
 }
