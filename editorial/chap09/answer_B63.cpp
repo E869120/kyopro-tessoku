@@ -56,10 +56,10 @@ int main() {
 		int pos = Q.front();
 		Q.pop();
 		for (int i = 0; i < G[pos].size(); i++) {
-			int nex = G[pos][i];
-			if (dist[nex] == -1) {
-				dist[nex] = dist[pos] + 1;
-				Q.push(nex);
+			int to = G[pos][i];
+			if (dist[to] == -1) {
+				dist[to] = dist[pos] + 1;
+				Q.push(to);
 			}
 		}
 	}
