@@ -23,14 +23,14 @@ int main() {
 		for (int j = 0; j < (1 << N); j++) {
 			// already[k] = 1 のとき、品物 k は既に無料になっている
 			int already[19];
-			for (int k = 1; k <= M; k++) {
+			for (int k = 1; k <= N; k++) {
 				if ((j & (1 << (k - 1))) == 0) already[k] = 0;
 				else already[k] = 1;
 			}
 
 			// クーポン券 i を選んだ場合の整数表現 v を計算する
 			int v = 0;
-			for (int k = 1; k <= M; k++) {
+			for (int k = 1; k <= N; k++) {
 				if (already[k] == 1 || A[i][k] == 1) v += (1 << (k - 1));
 			}
 
