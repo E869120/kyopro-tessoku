@@ -24,8 +24,16 @@
 * [Python のプログラム（90% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
 * [JAVA のプログラム（70% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
 
-### 演習問題の解答
-* 発売日までに作成される見通しです。
+### 演習問題の解答（準備中）
+* [1章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap01)
+* [2章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap02)
+* [3章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap03)
+* [4章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap04)
+* [5章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap05)
+* [6章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06)
+* [8章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08)
+* [9章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09)
+* [力試し問題：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final)
 
 <br />
 
