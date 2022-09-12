@@ -15,9 +15,10 @@ class Main {
 		System.out.println(Answer);
 	}
 
-	// 整数 x が何番目に存在するかを返す
 	static int N, X;
 	static int[] A;
+	
+	// 整数 x が何番目に存在するかを返す
 	static int search(int x) {
 		int L = 1, R = N;
 		while (L <= R) { // 探索範囲がなくなるまで、比較を続ける
