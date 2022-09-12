@@ -15,11 +15,9 @@ int main() {
 		for (int j = i * 2; j <= N; j += i) Deleted[j] = true;
 	}
 
-	// 答えを求める
-	int Answer = 0;
+	// 答えを出力
 	for (int i = 2; i <= N; i++) {
-		if (Deleted[i] == false) Answer += 1;
+		if (Deleted[i] == false) cout << i << endl;
 	}
-	cout << Answer << endl;
 	return 0;
 }
