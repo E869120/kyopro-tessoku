@@ -21,8 +21,8 @@
 
 ### コード
 * [C++ のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/cpp)
-* [Python のプログラム（85% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
-* [JAVA のプログラム（40% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
+* [Python のプログラム（90% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
+* [JAVA のプログラム（70% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
 
 ### 演習問題の解答
 * 発売日までに作成される見通しです。
