@@ -5,7 +5,7 @@ N = int(input())
 A = list(map(int, input().split()))
 
 # 動的計画法の準備
-LEN = 0 # LEN は L の長さ（例：L[4] まで書き込まれている場合 LEN=4）
+LEN = 0 # LEN は L の長さ（例：L[3] まで書き込まれている場合 LEN=4）
 L = []  # 0 番目から始まることに注意
 dp = [ None ] * N # 0 番目から始まることに注意
 
