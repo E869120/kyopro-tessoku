@@ -20,6 +20,7 @@ long long Division(long long a, long long b, long long m) {
 	return (a * Power(b, m - 2, m)) % m;
 }
 
+const long long mod = 1000000007;
 long long N, P;
 long long A[100009];
 map<long long, long long> Count;
@@ -28,6 +29,7 @@ int main() {
 	// 入力
 	cin >> N >> P;
 	for (int i = 1; i <= N; i++) cin >> A[i];
+	for (int i = 1; i <= N; i++) A[i] %= mod;
 
 	// P=0 の場合
 	if (P == 0) {
@@ -45,7 +47,7 @@ int main() {
 		long long Answer = 0;
 		for (int i = 1; i <= N; i++) {
 			// A[i]*Goal mod 1000000007 = P を満たす整数が Goal
-			long long Goal = Division(P, A[i], 1000000007);
+			long long Goal = Division(P, A[i], mod);
 			Answer += Count[Goal];
 			Count[A[i]] += 1;
 		}
