@@ -21,6 +21,6 @@ int main() {
 	cin >> W;
 
 	// 出力
-	cout << 12LL * Power(, W - 1, mod) % mod << endl;
+	cout << 12LL * Power(7, W - 1, mod) % mod << endl;
 	return 0;
 }
