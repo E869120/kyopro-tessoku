@@ -17,7 +17,7 @@ class Main {
 		for (int i = 1; i <= N; i++) {
 			int pos = ~Collections.binarySearch(L, A[i], (x, y) -> x.compareTo(y) >= 0 ? 1 : -1);
 
-			// L の最大値より  の方が大きかった場合
+			// L の最大値より A[i] の方が大きかった場合
 			if (pos >= LEN) {
 				LEN += 1;
 				L.add(A[i]);
