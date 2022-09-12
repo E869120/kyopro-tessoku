@@ -4,7 +4,7 @@ class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// 入力（文字列は 0 文字目から始まることに注意！）
+		// 入力
 		int N = sc.nextInt();
 		int[] A = new int[N + 1];
 		int[] B = new int[N + 1];
