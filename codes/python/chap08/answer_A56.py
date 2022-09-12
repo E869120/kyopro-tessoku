@@ -21,7 +21,7 @@ for i in range(N):
 	H[i + 1] = (H[i] * 100 + T[i]) % MOD
 
 # ハッシュ値を求める関数
-# S[l:r] のハッシュ値は (H[r] - H[l - 1] * power100[r - l + 1]) % MOD で計算
+# S[l-1:r] のハッシュ値は (H[r] - H[l - 1] * power100[r - l + 1]) % MOD で計算
 # C++ とは異なり、（負の値）% M (M >= 1) も 0 以上 M-1 以下になることに注意
 def hash_value(l, r):
 	return (H[r] - H[l - 1] * power100[r - l + 1]) % MOD
