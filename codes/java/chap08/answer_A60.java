@@ -54,10 +54,9 @@ class Main {
 	// int 型のペアのクラス PairInt
 	static class PairInt {
 		int first, second;
-		public PairInt(int first_, int second_) {
-			super();
-			this.first = first_;
-			this.second = second_;
+		public PairInt(int first, int second) {
+			this.first = first;
+			this.second = second;
 		}
 	}
 }
