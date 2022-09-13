@@ -21,16 +21,16 @@
 
 ### コード
 * [C++ のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/cpp)
-* [Python のプログラム（90% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
-* [JAVA のプログラム（70% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
+* [Python のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
+* [JAVA のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
 
 ### 演習問題の解答（準備中）
-* [1章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap01)
-* [2章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap02)
-* [3章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap03)
-* [4章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap04)
-* [5章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap05)
-* [6章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06)
+* [1章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap01)
+* [2章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap02)
+* [3章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap03)
+* [4章：C++ のコードのみ（解説は 9/14 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap04)
+* [5章：C++ のコードのみ（解説は 9/16 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap05)
+* [6章：C++ のコードのみ（解説は 9/16 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06)
 * [8章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08)
 * [9章：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09)
 * [力試し問題：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final)
