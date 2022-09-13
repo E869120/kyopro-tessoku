@@ -17,7 +17,7 @@ for i in range(1, N + 2):
 	posl = bisect.bisect_left(X, X[i] - R)
 	posr = bisect.bisect_left(X, X[i] - L + 1) - 1
 	# dp[i] の値を累積和で計算（C++ とは異なり、（負の値）% MOD も 0 以上 MOD-1 以下になることに注意）
-	dp[i] = dpsum[posr] - (dpsum[posl - 1] if posl >= 1 else 0)
+	dp[i] = (dpsum[posr] if posr >= 0 else 0) - (dpsum[posl - 1] if posl >= 1 else 0)
 	dp[i] %= MOD
 	# 累積和 dpsum[i] の値を更新
 	dpsum[i] = dpsum[i - 1] + dp[i]

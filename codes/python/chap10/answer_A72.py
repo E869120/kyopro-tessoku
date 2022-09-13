@@ -11,10 +11,10 @@ def paint_row(H, W, d, remaining_steps):
 	column.sort(reverse = True)
 
 	# 列に対して操作を行う
-	for i in range(remaining_steps):
-		idx = column[i][1]
-		for j in range(H):
-			d[j][idx] = '#'
+	for j in range(remaining_steps):
+		idx = column[j][1]
+		for i in range(H):
+			d[i][idx] = '#'
 	
 	# 黒マスの個数を数えて、これを返す
 	return sum(map(lambda l: l.count('#'), d))
