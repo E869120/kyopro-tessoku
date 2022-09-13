@@ -40,7 +40,7 @@ class Main {
 		Queue<State> Q = new PriorityQueue<>();
 		Q.add(new State(cur[1], 1));
 
-		// 幅優先探索
+		// ダイクストラ法
 		while (Q.size() >= 1) {
 			// 次に確定させるべき頂点を求める
 			// （ここでは、優先度付きキュー Q の最小要素を取り出し、これを Q から削除する）
