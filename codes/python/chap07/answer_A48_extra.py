@@ -19,12 +19,12 @@ def get_score(n, points, P):
 
 # 焼きなまし法によって答えを求める関数
 # （ここでは都市の番号を 0-indexed で扱っていることに注意）
-def hill_climbing(n, points):
+def simulated_annealing(n, points):
 	# 初期解生成
 	P = [ i % n for i in range(n + 1) ]
 	current_score = get_score(n, points, P)
 	# 焼きなまし法
-	NUM_LOOPS = 700000
+	NUM_LOOPS = 150000
 	for t in range(NUM_LOOPS):
 		# 反転させる区間 [L, R] を選ぶ
 		l = random.randint(1, n - 1) # 1 以上 n-1 以下のランダムな整数
@@ -55,8 +55,8 @@ for i in range(N):
 	x, y = map(int, input().split())
 	points[i] = point2d(x, y)
 
-# 貪欲法
-answer = hill_climbing(N, points)
+# 焼きなまし法
+answer = simulated_annealing(N, points)
 
 # 答えを出力（配列 answer の要素は 0-indexed になっていることに注意）
 for i in answer:

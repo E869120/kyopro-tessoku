@@ -47,7 +47,7 @@ for i in range(N):
 	x, y = map(int, input().split())
 	points[i] = point2d(x, y)
 
-# 貪欲法
+# 山登り法
 answer = hill_climbing(N, points)
 
 # 答えを出力（配列 answer の要素は 0-indexed になっていることに注意）
