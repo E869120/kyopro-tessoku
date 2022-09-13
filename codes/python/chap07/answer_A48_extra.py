@@ -38,7 +38,7 @@ def simulated_annealing(n, points):
 		new_score -= points[P[r]].dist(points[P[r + 1]])
 		new_score += points[P[l - 1]].dist(points[P[r]])
 		new_score += points[P[l]].dist(points[P[r + 1]])
-		# 7.2 節の解答例から変更した唯一の部分（Probability は採用確率）
+		# 7.2 節の解答例から変更した唯一の部分（probability は採用確率）
 		# （random.random() で 0 以上 1 未満のランダムな実数を生成）
 		T = 30 - 28 * (t / NUM_LOOPS)
 		probability = math.exp(min((current_score - new_score) / T, 0))

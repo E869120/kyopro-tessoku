@@ -34,7 +34,7 @@ def simulated_annealing(n, points):
 		# P[l], P[l+1], ..., P[r] を逆順にする
 		P[l:r+1] = reversed(P[l:r+1])
 		new_score = get_score(n, points, P)
-		# 7.2 節の解答例から変更した唯一の部分（Probability は採用確率）
+		# 7.2 節の解答例から変更した唯一の部分（probability は採用確率）
 		# （random.random() で 0 以上 1 未満のランダムな実数を生成）
 		T = 30 - 28 * (t / NUM_LOOPS)
 		probability = math.exp(min((current_score - new_score) / T, 0))
