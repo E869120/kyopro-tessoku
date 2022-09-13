@@ -47,6 +47,7 @@ class Main {
 			}
 			output.print(answer[i]);
 		}
+		output.println();
 		output.flush();
 	}
 	
