@@ -18,7 +18,7 @@ int main() {
 	for (int i = 1; i <= N; i++) cin >> A[i];
 
 	// 二分探索
-	double Left = 1, Right = 1000000, Mid;
+	double Left = 1, Right = 1000000000, Mid;
 	double Border = 0; // 現在のボーダー（合計議席数が K 以上となった最大の値）
 	for (int i = 1; i <= 60; i++) {
 		Mid = (Left + Right) / 2.0;
