@@ -24,7 +24,7 @@ int main() {
 			// already[k] = 1 のとき、品物 k は既に無料になっている
 			int already[19];
 			for (int k = 1; k <= N; k++) {
-				if ((j & (1 << (k - 1))) == 0) already[k] = 0;
+				if ((j / (1 << (k - 1))) % 2 == 0) already[k] = 0;
 				else already[k] = 1;
 			}
 
