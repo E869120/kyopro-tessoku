@@ -6,7 +6,7 @@ int N, A[200009], B[200009];
 
 int main() {
 	// 入力
-	cin >> H >> W >> N;
+	cin >> N >> H >> W;
 	for (int i = 1; i <= N; i++) cin >> A[i] >> B[i];
 
 	// 全部 XOR した値（ニム和）を求める
