@@ -2,7 +2,7 @@
 using namespace std;
 
 const int mod = 1000000007;
-int N, a[1000009];
+int N, a[10000009];
 
 int main() {
 	// 入力
