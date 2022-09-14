@@ -11,8 +11,10 @@ int main() {
 	// 約数を列挙
 	vector<long long> Yakusuu;
 	for (long long i = 1; i * i <= N; i++) {
-		Yakusuu.push_back(i);
-		if (i != N / i) Yakusuu.push_back(N / i);
+		if (N % i == 0) {
+			Yakusuu.push_back(i);
+			if (i != N / i) Yakusuu.push_back(N / i);
+		}
 	}
 
 	// 小さい順にソート
