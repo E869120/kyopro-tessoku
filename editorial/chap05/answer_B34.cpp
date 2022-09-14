@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-long long N, A[100009];
+long long N, X, Y, A[100009];
 
 int main() {
 	// 入力
-	cin >> N;
+	cin >> N >> X >> Y;
 	for (int i = 1; i <= N; i++) cin >> A[i];
 
 	// Grundy 数を計算
