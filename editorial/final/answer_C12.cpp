@@ -30,7 +30,7 @@ int main() {
 	for (int i = 1; i <= K; i++) {
 		for (int j = 1; j <= N; j++) {
 			// k は「前の章がどのページで終わったか」
-			for (int k = 0; k <= i - 1; k++) {
+			for (int k = 0; k <= j - 1; k++) {
 				dp[i][j] = max(dp[i][j], dp[i - 1][k] + tsunagari(k + 1, j));
 			}
 		}
