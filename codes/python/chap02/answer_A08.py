@@ -1,8 +1,8 @@
 # 入力（前半）
 H, W = map(int, input().split())
-X = [ None ] * (W)
+X = [ None ] * (H)
 Z = [ [ 0 ] * (W + 1) for i in range(H + 1) ]
-for i in range(W):
+for i in range(H):
 	X[i] = list(map(int, input().split()))
 
 # 入力（後半）
