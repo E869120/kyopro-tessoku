@@ -11,7 +11,8 @@ int main() {
 	for (int i = 1; i <= N - 1; i++) cin >> B[i];
 
 	// 配列の初期化
-	for (int i = 1; i <= N; i++) dp[i] = 0;
+	dp[1] = 0;
+	for (int i = 2; i <= N; i++) dp[i] = -1000000000;
 
 	// 動的計画法 → 出力
 	for (int i = 1; i <= N - 1; i++) {
