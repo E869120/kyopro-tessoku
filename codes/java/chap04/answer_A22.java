@@ -13,7 +13,8 @@ class Main {
 
 		// 配列の初期化
 		int[] dp = new int[N + 1];
-		for (int i = 1; i <= N; i++) dp[i] = 0;
+		dp[1] = 0;
+		for (int i = 2; i <= N; i++) dp[i] = -1000000000;
 
 		// 動的計画法
 		for (int i = 1; i <= N - 1; i++) {
