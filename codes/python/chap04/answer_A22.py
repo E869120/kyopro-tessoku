@@ -4,7 +4,8 @@ A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 
 # 配列の初期化
-dp = [ 0 ] * (N + 1)
+dp = [ -(10 ** 9) ] * (N + 1)
+dp[1] = 0
 
 # 動的計画法
 for i in range(1, N):
