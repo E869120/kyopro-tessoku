@@ -12,7 +12,7 @@ int main() {
 		for (int j = 1; j <= N; j++) cin >> A[i][j];
 	}
  
-	// 配列 E を初期化
+	// 配列 T を初期化
 	for (int i = 1; i <= N; i++) T[i] = i;
  
 	// クエリの処理
