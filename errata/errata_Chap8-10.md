@@ -34,6 +34,7 @@
 |:---|:---|:---|:---|:---|:---|
 | p.413 | 10.1 節／下図 2 コマ目 | 4230 | 3420 | - | - |
 | p.413 | 10.1 節／下図 3 コマ目 | 3420 | 4230 | - | - |
+| p.422 | 10.3 節／コード 13 行目 | pair<int,int> | pair<long long,int> | [コード](https://github.com/E869120/kyopro-tessoku/blob/main/codes/cpp/chap10/answer_A73.cpp)は修正済 | - |
 | p.437 | 10.6 節／コード 24 行目 | - | <code>posR==-1</code> のときに未定義動作が起こらないように修正 | [コード](https://github.com/E869120/kyopro-tessoku/blob/main/codes/cpp/chap10/answer_A76.cpp)は修正済 | - |
 | p.439 | 10.7 節／セリフ | スコアの最小値 | スコアの最大値 | - | - |
 | p.448 | 力試し／問題 C13 | 積を 1000000007 で割ると | 積を 1000000007 で割った余りが | - | - |
