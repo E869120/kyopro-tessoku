@@ -56,8 +56,8 @@ int main() {
 	// 答えを出力
 	// マラソンコースの距離：cur[N]/10000 を小数点以下切り上げた値
 	// コース上の木の数：cur[N] と Distance*10000 の差分
-	int Distance = (cur[N] + 9999) / 10000;
-	int NumTrees = Distance * 10000 - cur[N];
+	long long Distance = (cur[N] + 9999) / 10000;
+	long long NumTrees = Distance * 10000 - cur[N];
 	cout << Distance << " " << NumTrees << endl;
 	return 0;
 }
