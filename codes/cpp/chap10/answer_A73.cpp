@@ -5,7 +5,7 @@
 using namespace std;
 
 // 入力・グラフを表す変数
-long long N, M, A[100009], B[100009], C[100009], D[100009];
+int N, M, A[100009], B[100009], C[100009], D[100009];
 vector<pair<int, int>> G[8009];
 
 // ダイクストラ法で使う変数
@@ -18,12 +18,12 @@ int main() {
 	for (int i = 1; i <= M; i++) {
 		cin >> A[i] >> B[i] >> C[i] >> D[i];
 		if (D[i] == 1) {
-			G[A[i]].push_back(make_pair(B[i], 10000LL * C[i] - 1LL));
-			G[B[i]].push_back(make_pair(A[i], 10000LL * C[i] - 1LL));
+			G[A[i]].push_back(make_pair(B[i], 10000 * C[i] - 1));
+			G[B[i]].push_back(make_pair(A[i], 10000 * C[i] - 1));
 		}
 		else {
-			G[A[i]].push_back(make_pair(B[i], 10000LL * C[i]));
-			G[B[i]].push_back(make_pair(A[i], 10000LL * C[i]));
+			G[A[i]].push_back(make_pair(B[i], 10000 * C[i]));
+			G[B[i]].push_back(make_pair(A[i], 10000 * C[i]));
 		}
 	}
 
