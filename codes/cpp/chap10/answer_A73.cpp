@@ -10,7 +10,7 @@ vector<pair<int, int>> G[8009];
 
 // ダイクストラ法で使う変数
 long long cur[8009]; bool kakutei[8009];
-priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> Q;
+priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> Q;
 
 int main() {
 	// 入力
