@@ -25,14 +25,16 @@
 * [JAVA のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
 
 ### 演習問題の解答（準備中）
+**販促などの影響でかなり遅れています。申し訳ございません。**
+
 * [1章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap01)
 * [2章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap02)
 * [3章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap03)
 * [4章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap04)
 * [5章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap05)
-* [6章：C++ のコードのみ（解説は 9/19 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06)
-* [8章：C++ のコードのみ（解説は 9/21 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08)
-* [9章：C++ のコードのみ（解説は 9/21 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09)
+* [6章：C++ のコードのみ（解説は 9/21 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06)
+* [8章：C++ のコードのみ（解説は 9/23 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08)
+* [9章：C++ のコードのみ（解説は 9/23 に完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09)
 * [力試し問題：C++ のコードのみ](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final)
 
 <br />
