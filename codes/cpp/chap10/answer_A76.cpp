@@ -21,7 +21,7 @@ int main() {
 		int posR = lower_bound(X, X + N + 2, X[i] - L + 1) - X; posR--;
 
 		// dp[i] の値を累積和で計算（引き算の余りに注意！）
-		if (posR == 0) dp[i] = 0;
+		if (posR == -1) dp[i] = 0;
 		else dp[i] = sum[posR];
 		if (posL >= 1) dp[i] -= sum[posL - 1];
 		dp[i] = (dp[i] + mod) % mod;
