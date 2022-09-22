@@ -51,13 +51,13 @@ int main() {
  
 	// 動的計画法
 	for (int i = 2; i <= N; i++) {
-		int pos1 = lower_bound(X + 1, X + N + 1, X[i] - R) - X;     // 「前の足場」の最小の番号
-		int pos2 = lower_bound(X + 1, X + N + 1, X[i] - L + 1) - X; // 「前の足場」の最大の番号
-		dp[i] = Z.query(pos1, pos2, 1, Z.siz + 1, 1) + 1;
+		int posL = lower_bound(X + 1, X + N + 1, X[i] - R) - X;
+		int posR = lower_bound(X + 1, X + N + 1, X[i] - L + 1) - X - 1;
+		dp[i] = Z.query(posL, posR + 1, 1, Z.siz + 1, 1) + 1;
 		Z.update(i, dp[i]);
 	}
  
-	// 答えを求める
+	// 答えを出力
 	cout << dp[N] << endl;
 	return 0;
 }
