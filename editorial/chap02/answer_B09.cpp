@@ -25,11 +25,11 @@ int main() {
 	}
  
 	// 二次元累積和をとる
-	for (int i = 1; i <= 1500; i++) {
+	for (int i = 0; i <= 1500; i++) {
 		for (int j = 1; j <= 1500; j++) T[i][j] = T[i][j - 1] + T[i][j];
 	}
 	for (int i = 1; i <= 1500; i++) {
-		for (int j = 1; j <= 1500; j++) T[i][j] = T[i - 1][j] + T[i][j];
+		for (int j = 0; j <= 1500; j++) T[i][j] = T[i - 1][j] + T[i][j];
 	}
  
 	// 面積を数える
