@@ -51,3 +51,4 @@
 | p.143 | 4.8 節／解答例 27 行目 | <code>((j&(1<<(k-1)))</code> | <code>(j/(1<<(k-1)))%2</code> | [コード](https://github.com/E869120/kyopro-tessoku/blob/main/codes/cpp/chap04/answer_A23.cpp)は修正済 | 2 刷で修正 |
 | p.143 | 4.8 節／解答例 33 行目 | <code>for (int k = 1; k <= M; k++)</code> | <code>for (int k = 1; k <= N; k++)</code> | [コード](https://github.com/E869120/kyopro-tessoku/blob/main/codes/cpp/chap04/answer_A23.cpp)は修正済 | 2 刷で修正 |
 | p.143 | 4.8 節／解答例 46 行目 | - | 答えが -1 のときの場合分け忘れ | [コード](https://github.com/E869120/kyopro-tessoku/blob/main/codes/cpp/chap04/answer_A23.cpp)は修正済 | 2 刷で修正 |
+| p.146 | 4.9 節／脚注 6 の位置 | 「O(N) かかりました」の後 | 「計算量を改善することができます」の後 | - | 2 刷で修正 |
