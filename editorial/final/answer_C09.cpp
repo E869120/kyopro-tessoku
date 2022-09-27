@@ -3,24 +3,24 @@
 using namespace std;
 
 long long N, A[500009];
-long long dp[500009][2];
+long long dp1[500009], dp2[500009];
 
 int main() {
 	// 入力
 	cin >> N;
 	for (int i = 1; i <= N; i++) cin >> A[i];
 
-	// 動的計画法（i=1）
-	dp[1][0] = 0;
-	dp[1][1] = A[1];
+	// 配列の初期化
+	dp1[0] = 0;
+	dp2[0] = 0;
 
-	// 動的計画法（i>=2）
-	for (int i = 2; i <= N; i++) {
-		dp[i][0] = max(dp[i - 1][0], dp[i - 1][1]);
-		dp[i][1] = dp[i - 1][0] + A[i];
+	// 動的計画法
+	for (int i = 1; i <= N; i++) {
+		dp1[i] = dp2[i - 1] + A[i];
+		dp2[i] = max(dp1[i - 1], dp2[i - 1]);
 	}
-	
-	// 出力
-	cout << max(dp[N][0], dp[N][1]) << endl;
+
+	// 答えを出力
+	cout << max(dp1[N], dp2[N]) << endl;
 	return 0;
 }
