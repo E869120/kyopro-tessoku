@@ -35,7 +35,7 @@
 * [6章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06)
 * [8章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08)
 * [9章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09)
-* [力試し問題：C++ のコードのみ（9/28 完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final)
+* [力試し問題：最初の 10 問のみ完成（後半は 9/28 完成予定）](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final)
 
 <br />
 
