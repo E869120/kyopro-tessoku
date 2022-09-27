@@ -7,6 +7,6 @@ int main() {
 	cin >> N;
 
 	// 出力
-	cout << N * 110 / 100 << endl;
+	cout << N * 11 / 10 << endl;
 	return 0;
 }
