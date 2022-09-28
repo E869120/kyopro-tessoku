@@ -32,7 +32,7 @@ int main() {
 		if (QueryType[i] == 'C') {
 			Z1.pop_front();
 		}
-		// [D] 先頭が抜ける
+		// [D] 先頭を答える
 		if (QueryType[i] == 'D') {
 			cout << Z1.front() << endl;
 		}
