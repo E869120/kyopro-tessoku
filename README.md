@@ -41,7 +41,7 @@
 | 4 章 | 動的計画法 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap04) |
 | 5 章 | 数学的問題 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap05) |
 | 6 章 | 考察テクニック | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06) |
-| 7 章 | ヒューリスティック | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap07) |
+| 7 章 | ヒューリスティック | 応用問題ナシ |
 | 8 章 | データ構造とクエリ処理 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08) |
 | 9 章 | グラフアルゴリズム | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09) |
 | 10 章 | 総合問題・力試し問題 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final) |
