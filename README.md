@@ -7,7 +7,10 @@
 
 なお、本のリンクは以下の通りです。ぜひご購入いただけると幸いです。
 
-* https://www.amazon.co.jp/dp/483997750X
+| 種類 | リンク | 現在の在庫状況 |
+|:---|:---|:---|
+| Amazon | [https://www.amazon.co.jp/dp/483997750X](https://www.amazon.co.jp/dp/483997750X) | × |
+| honto | [https://honto.jp/netstore/pd-book_31847742.html](https://honto.jp/netstore/pd-book_31847742.html) | 〇 |
 
 <br />
 
@@ -24,18 +27,24 @@
 * [Python のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
 * [JAVA のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
 
-### 演習問題の解答（準備中）
-**1～9 章の Python の解答例は 9/30 まで、力試し問題の Python の解答例は 10/2 までに完成する見通しです。**
+### 演習問題の解答
+* [全 79 問の解答・解説をまとめた PDF](https://github.com/E869120/kyopro-tessoku/blob/main/editorial/Editorial_All.pdf)
 
-* [1章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap01)
-* [2章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap02)
-* [3章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap03)
-* [4章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap04)
-* [5章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap05)
-* [6章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06)
-* [8章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08)
-* [9章：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09)
-* [力試し問題：Python の解答例を除き完成](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final)
+章ごとの解説や C++ のソースコードは以下のリンクから閲覧できます。  
+なお、Python のソースコードは 9/30 頃までお待ちください。
+
+| 章 | タイトル | 解説・ソースコードのリンク |
+|:---|:---|:---|
+| 1 章 | アルゴリズムと計算量 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap01) |
+| 2 章 | 累積和 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap02) |
+| 3 章 | 二分探索 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap03) |
+| 4 章 | 動的計画法 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap04) |
+| 5 章 | 数学的問題 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap05) |
+| 6 章 | 考察テクニック | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap06) |
+| 7 章 | ヒューリスティック | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap07) |
+| 8 章 | データ構造とクエリ処理 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap08) |
+| 9 章 | グラフアルゴリズム | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/chap09) |
+| 10 章 | 総合問題・力試し問題 | [リンク](https://github.com/E869120/kyopro-tessoku/tree/main/editorial/final) |
 
 <br />
 
