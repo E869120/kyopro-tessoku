@@ -1,7 +1,7 @@
 ## 1. 概要
 本リポジトリは、拙著『競技プログラミングの鉄則 ～アルゴリズムと思考力を高める 77 の技術～』の補足資料です。主に以下の 3 つの内容が掲載されています。
 
-* 本書の C++/Python/JAVA のソースコード
+* 本書の C++/Python/Java のソースコード
 * 節末問題・力試し問題の解答
 * 正誤表
 
@@ -25,7 +25,7 @@
 ### コード
 * [C++ のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/cpp)
 * [Python のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/python)
-* [JAVA のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
+* [Java のプログラム（100% 完成）](https://github.com/E869120/kyopro-tessoku/tree/main/codes/java)
 
 ### 演習問題の解答
 * [全 79 問の解答・解説をまとめた PDF](https://github.com/E869120/kyopro-tessoku/blob/main/editorial/Editorial_All.pdf)
