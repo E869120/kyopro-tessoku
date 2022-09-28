@@ -48,15 +48,15 @@ int main() {
 	// 各地点での「値段の最小値」を求める
 	for (int i = 1; i <= L - 1; i++) Min_Value[i] = (1LL << 60);
 	for (int i = 1; i <= N; i++) Min_Value[A[i]] = min(Min_Value[A[i]], C[i]);
-	
+
 	// セグメント木に載せる
 	Z.init(L);
 	for (int i = 1; i <= L - 1; i++) Z.update(i, Min_Value[i]);
 
 	// 答えを求める
 	long long Answer = 0;
-	for (int i = K + 1; i <= L; i++) {
-		long long val = Z.query(i - K, i, 1, Z.siz + 1, 1);
+	for (int i = 1; i <= L - K; i++) {
+		long long val = Z.query(i, i + K, 1, Z.siz + 1, 1);
 		if (val == (1LL << 60)) {
 			cout << "-1" << endl;
 			return 0;
