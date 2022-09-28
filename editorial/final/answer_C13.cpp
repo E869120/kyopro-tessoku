@@ -31,27 +31,21 @@ int main() {
 	for (int i = 1; i <= N; i++) cin >> A[i];
 	for (int i = 1; i <= N; i++) A[i] %= mod;
 
-	// P=0 の場合
-	if (P == 0) {
-		long long cnt = 0;
-		for (int i = 1; i <= N; i++) {
-			if (A[i] == 0) cnt++;
+	// カード j と i を選ぶとする (j < i)
+	// 各 i に対して、何個の j で条件を満たすかを数える
+	long long Answer = 0;
+	for (int i = 1; i <= N; i++) {
+		if (A[i] == 0) {
+			if (P == 0) Answer += (i - 1);
+			else Answer += 0;
 		}
-		cout << cnt * (cnt - 1) / 2 + cnt * (N - cnt) << endl;
-	}
-
-	// そうでない場合
-	if (P != 0) {
-		// カード j と i を選ぶとする (j < i)
-		// 各 i に対して、何個の j で条件を満たすかを数える
-		long long Answer = 0;
-		for (int i = 1; i <= N; i++) {
+		else {
 			// A[i]*Goal mod 1000000007 = P を満たす整数が Goal
 			long long Goal = Division(P, A[i], mod);
 			Answer += Count[Goal];
-			Count[A[i]] += 1;
 		}
-		cout << Answer << endl;
+		Count[A[i]] += 1;
 	}
+	cout << Answer << endl;
 	return 0;
 }
