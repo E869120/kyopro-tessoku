@@ -1,87 +1,84 @@
 #include <iostream>
+#include <tuple>
 #include <vector>
 #include <algorithm>
 using namespace std;
-
-// 入力で与えられる変数
+ 
+// 入力部分
 int N, M, K;
-int A[100009], S[100009], B[100009], T[100009];
-
-// 各空港の "時刻表"
-vector<int> Time[100009];
-
-// グラフ
-vector<int> VertID[100009];        // 頂点番号（Time に対応）
-vector<pair<int, int>> G[400009];  // グラフ
-int Verts = 0;                     // グラフの頂点数
-
-// 動的計画法
+int A[100009], B[100009], S[100009], T[100009];
+ 
+// (時刻, 路線番号または空港番号, 出発か到着か)
+// 出発 = 2／到着 = 1／最初と最後 = 0
+// ここで、出発の方が番号が大きい理由は、同じ時刻のときに到着をより早くするため
+vector<tuple<int, int, int>> List;
+ 
+// 頂点番号の情報
+int VertS[100009]; // 路線 i の到着
+int VertT[100009]; // 路線 i の出発
+vector<int> Airport[100009];
+ 
+// グラフおよび dp[i]
+vector<pair<int, int>> G[400009];
 int dp[400009];
-
+ 
 int main() {
 	// 入力
 	cin >> N >> M >> K;
 	for (int i = 1; i <= M; i++) {
 		cin >> A[i] >> S[i] >> B[i] >> T[i];
-		T[i] += K; // 補正をかける
-		Time[A[i]].push_back(S[i]);
-		Time[B[i]].push_back(T[i]);
+		T[i] += K; // 到着時刻の補正
 	}
-
-	// Time[i] に「始点」と「終点」を追加した上でソートする
-	for (int i = 1; i <= N; i++) {
-		Time[i].push_back(0);
-		Time[i].push_back(2000000000);
-		sort(Time[i].begin(), Time[i].end());
+ 
+	// 頂点となり得る (空港, 時刻) の組を「時刻の早い順に」ソート
+	for (int i = 1; i <= M; i++) List.push_back(make_tuple(S[i], i, 2));
+	for (int i = 1; i <= M; i++) List.push_back(make_tuple(T[i], i, 1));
+	for (int i = 1; i <= N; i++) List.push_back(make_tuple(-1, i, 0));
+	for (int i = 1; i <= N; i++) List.push_back(make_tuple(2100000000, i, 0));
+	sort(List.begin(), List.end());
+ 
+	// 各路線の頂点番号を求める
+	// ここで、頂点番号は時刻の早い順に 1, 2, ..., List.size() となる
+	for (int i = 0; i < List.size(); i++) {
+		if (get<2>(List[i]) == 2) VertS[get<1>(List[i])] = i + 1;
+		if (get<2>(List[i]) == 1) VertT[get<1>(List[i])] = i + 1;
 	}
-
-	// 動的計画法（Step 1：頂点を "時刻の小さい順" にソート）
-	vector<pair<int, int>> tmp;
-	for (int i = 1; i <= N; i++) {
-		for (int j = 0; j < Time[i].size(); j++) tmp.push_back(make_pair(Time[i][j], i));
+ 
+	// 各空港の頂点番号を求める（空港で待つことに対応する実線を求めるときに使う）
+	for (int i = 0; i < List.size(); i++) {
+		if (get<2>(List[i]) == 0) Airport[get<1>(List[i])].push_back(i + 1);
+		if (get<2>(List[i]) == 1) Airport[B[get<1>(List[i])]].push_back(i + 1);
+		if (get<2>(List[i]) == 2) Airport[A[get<1>(List[i])]].push_back(i + 1);
 	}
-	sort(tmp.begin(), tmp.end());
-	Verts = tmp.size();
-
-	// 動的計画法（Step 2：頂点番号を求める）
-	for (int i = 0; i < Verts; i++) {
-		VertID[tmp[i].second].push_back(i);
-	}
-
-	// 動的計画法（Step 3：グラフを作る [空港に留まる辺]）
-	for (int i = 1; i <= N; i++) {
-		for (int j = 0; j < (int)VertID[i].size() - 1; j++) {
-			G[VertID[i][j]].push_back(make_pair(VertID[i][j + 1], 0));
-		}
-	}
-
-	// 動的計画法（Step 4：グラフを作る [飛行機で移動する辺]）
+ 
+	// グラフを作る（辺が逆向きになっていることに注意！）
 	for (int i = 1; i <= M; i++) {
-		int pos1 = lower_bound(Time[A[i]].begin(), Time[A[i]].end(), S[i]) - Time[A[i]].begin();
-		int pos2 = lower_bound(Time[B[i]].begin(), Time[B[i]].end(), T[i]) - Time[B[i]].begin();
-		int vert1 = VertID[A[i]][pos1]; // 始点の頂点番号
-		int vert2 = VertID[B[i]][pos2]; // 終点の頂点番号
-		G[vert1].push_back(make_pair(vert2, 1));
+		G[VertT[i]].push_back(make_pair(VertS[i], 1)); // 路線に対応する辺（点線）
 	}
-
-	// 動的計画法（Step 5：配列 dp の初期化 + 初期状態を考える）
-	for (int i = 0; i < Verts; i++) dp[i] = -1000000000;
 	for (int i = 1; i <= N; i++) {
-		dp[VertID[i][0]] = 0;
-	}
-
-	// 動的計画法（Step 6：配列 dp の値を求める）
-	for (int i = 0; i < Verts; i++) {
-		for (int j = 0; j < G[i].size(); j++) {
-			int to = G[i][j].first;
-			int cost = G[i][j].second;
-			dp[to] = max(dp[to], dp[i] + cost);
+		for (int j = 0; j < (int)Airport[i].size() - 1; j++) {
+			int idx1 = Airport[i][j];
+			int idx2 = Airport[i][j + 1];
+			G[idx2].push_back(make_pair(idx1, 0)); // 空港で待つことに対応する辺（実線）
 		}
 	}
-
-	// 答えを求める
-	int Answer = 0;
-	for (int i = 0; i < Verts; i++) Answer = max(Answer, dp[i]);
-	cout << Answer << endl;
+ 
+	// グラフに始点（頂点 0）と終点（頂点 List.size()+1）を追加
+	for (int i = 1; i <= N; i++) {
+		G[Airport[i][0]].push_back(make_pair(0, 0));
+		G[List.size() + 1].push_back(make_pair(Airport[i][Airport[i].size() - 1], 0));
+	}
+ 
+	// 動的計画法によって dp[i] の値を求める
+	// 頂点番号は時刻の早い順になっているので、dp[1] から順に計算すれば良い
+	dp[0] = 0;
+	for (int i = 1; i <= List.size() + 1; i++) {
+		for (int j = 0; j < G[i].size(); j++) {
+			dp[i] = max(dp[i], dp[G[i][j].first] + G[i][j].second);
+		}
+	}
+ 
+	// 出力
+	cout << dp[List.size() + 1] << endl;
 	return 0;
 }
