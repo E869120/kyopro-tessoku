@@ -14,7 +14,7 @@ for i in range(1, M+1):
 		# already[k] = 1 のとき、品物 k は既に無料になっている
 		already = [ None ] * N
 		for k in range(0, N):
-			if (j / (2 ** k)) % 2 == 0:
+			if (j // (2 ** k)) % 2 == 0:
 				already[k] = 0
 			else:
 				already[k] = 1
