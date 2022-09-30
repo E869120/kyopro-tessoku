@@ -9,7 +9,7 @@ LEN = 0 # LEN は L の長さ（例：L[3] まで書き込まれている場合 
 L = []  # 0 番目から始まることに注意
 dp = [ None ] * N # 0 番目から始まることに注意
 
-# 動的計画法（配列 dp を使わない実装）
+# 動的計画法（配列 dp を使った実装）
 for i in range(N):
 	pos = bisect.bisect_left(L, A[i])
 	dp[i] = pos
