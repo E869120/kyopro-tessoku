@@ -13,7 +13,6 @@ for i in range(2, N):
 
 # 答えの復元
 # 変数 Place は現在位置（ゴールから進んでいく）
-# たとえば入力例の場合、Place は 5 → 4 → 2 → 1 と変化していく
 Answer = []
 Place = N-1
 while True:
