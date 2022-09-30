@@ -25,7 +25,7 @@ class Main {
  
 		// Q[i] を求める
 		int[] Q = new int[N + 1];
-		Q[N] = A[N]
+		Q[N] = A[N];
 		for (int i = N - 1; i >= 1; i--) Q[i] = Math.max(Q[i + 1], A[i]);
  
 		// それぞれの日について答えを求める
