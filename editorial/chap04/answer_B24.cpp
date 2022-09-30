@@ -31,7 +31,7 @@ int main() {
 	for (int i = 1; i <= N; i++) tmp.push_back(make_pair(X[i], -Y[i]));
 	sort(tmp.begin(), tmp.end());
 	
-	// 求める LIS の配列は？
+	// LIS を求めるべき配列は？
 	vector<int> A;
 	for (int i = 0; i < tmp.size(); i++) {
 		A.push_back(-tmp[i].second);
