@@ -1,4 +1,3 @@
-
 # 入力
 T = int(input())
 P = [ None ] * T
@@ -17,7 +16,7 @@ A = [ 0 ] * 20
 CurrentScore = 0
 for i in range(T):
 	# パターン A の場合のスコアを求める
-	ScoreA = CurrentScore;
+	ScoreA = CurrentScore
 	PatA = [ 0 ] * 20
 	for j in range(20):
 		PatA[j] = A[j]
@@ -29,7 +28,7 @@ for i in range(T):
 			ScoreA += 1
 
 	# パターン B の場合のスコアを求める
-	ScoreB = CurrentScore;
+	ScoreB = CurrentScore
 	PatB = [ 0 ] * 20
 	for j in range(20):
 		PatB[j] = A[j]
