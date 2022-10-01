@@ -43,7 +43,7 @@ int main() {
 			long long v1 = GetDown(x[i]);
 			long long v2 = GetUp(x[i]);
 			long long Answer = min(x[i] - v1, v2 - x[i]);
-			if (Answer >= 100000000000LL) cout << "-1" << endl;
+			if (Answer == 100000000000000LL) cout << "-1" << endl;
 			else cout << Answer << endl;
 		}
 	}
