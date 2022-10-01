@@ -7,7 +7,7 @@ using namespace std;
 int N, X[159], Y[159];
 int P[159];
 
-// 0 以上 1 未満のランダムな実数を返す関数
+// 0 以上 1 以下のランダムな実数を返す関数
 double Randouble() {
 	return 1.0 * rand() / RAND_MAX;
 }
