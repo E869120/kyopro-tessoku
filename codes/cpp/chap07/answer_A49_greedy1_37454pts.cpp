@@ -1,7 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <functional>
 using namespace std;
 
 int T, P[109], Q[109], R[109];
