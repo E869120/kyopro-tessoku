@@ -24,9 +24,9 @@
 本リポジトリの目次は以下の通りです。
 
 ### 正誤表
-* [正誤表（0～4章）：最終更新日 2022/9/21](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap0-4.md)
-* [正誤表（5～7章）：最終更新日 2022/9/21](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap5-7.md)
-* [正誤表（8～10章）：最終更新日 2022/9/21](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
+* [正誤表（0～4章）：最終更新日 2022/9/26](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap0-4.md)
+* [正誤表（5～7章）：最終更新日 2022/10/1](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap5-7.md)
+* [正誤表（8～10章）：最終更新日 2022/9/26](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
 
 ### コード
 9/30 更新：すべてのプログラムは、自動採点システムで正解判定（AC）となることが確認されています。
