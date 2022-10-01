@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
  
-long long N, QueryType[100009], x[100009];
+long long Q, QueryType[100009], x[100009];
 set<long long> Set1, Set2;
  
 // r 以下の最大値を返す
@@ -30,11 +30,11 @@ long long GetUp(long long r) {
  
 int main() {
 	// 入力
-	cin >> N;
-	for (int i = 1; i <= N; i++) cin >> QueryType[i] >> x[i];
+	cin >> Q;
+	for (int i = 1; i <= Q; i++) cin >> QueryType[i] >> x[i];
  
 	// クエリの処理
-	for (int i = 1; i <= N; i++) {
+	for (int i = 1; i <= Q; i++) {
 		if (QueryType[i] == 1) {
 			Set1.insert(x[i]);
 			Set2.insert(-x[i]);
