@@ -1,3 +1,7 @@
+// ###########################
+// # 配列 dp を使わない実装
+// ###########################
+
 #include <iostream>
 #include <algorithm>
 using namespace std;
