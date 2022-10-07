@@ -1,7 +1,3 @@
-**重要：この書籍は好評につき Amazon で完売状態になっています。マイナビブックスには在庫がありますので、ネット書店で購入したい方はマイナビブックスをご活用ください。なお、Amazon の在庫は重版により 10/8～14 頃に復活する予定です。**
-
-<br />
-
 ## 1. 概要
 本リポジトリは、拙著『競技プログラミングの鉄則 ～アルゴリズムと思考力を高める 77 の技術～』の補足資料です。主に以下の 3 つの内容が掲載されています。
 
@@ -9,13 +5,9 @@
 * 節末問題・力試し問題の解答
 * 正誤表
 
-なお、本のリンクは以下の通りです。Amazon や honto には在庫がないので、ネット書店で買いたい方はマイナビブックスからの注文を推奨します。
+なお、本のリンクは以下の通りです。
 
-| 種類 | リンク | 現在の在庫状況 |
-|:---|:---|:---|
-| Amazon | [https://www.amazon.co.jp/dp/483997750X](https://www.amazon.co.jp/dp/483997750X) | × |
-| honto | [https://honto.jp/netstore/pd-book_31847742.html](https://honto.jp/netstore/pd-book_31847742.html) | × |
-| マイナビブックス | [https://book.mynavi.jp/ec/products/detail/id=131288](https://book.mynavi.jp/ec/products/detail/id=131288) | 〇 |
+* [https://www.amazon.co.jp/dp/483997750X](https://www.amazon.co.jp/dp/483997750X)
 
 <br />
 
