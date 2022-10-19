@@ -16,8 +16,8 @@
 
 ### 正誤表
 * [正誤表（0～4章）：最終更新日 2022/10/1](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap0-4.md)
-* [正誤表（5～7章）：最終更新日 2022/10/1](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap5-7.md)
-* [正誤表（8～10章）：最終更新日 2022/9/26](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
+* [正誤表（5～7章）：最終更新日 2022/10/20](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap5-7.md)
+* [正誤表（8～10章）：最終更新日 2022/10/20](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
 
 ### コード
 9/30 更新：すべてのプログラムは、自動採点システムで正解判定（AC）となることが確認されています。
@@ -29,7 +29,7 @@
 ### 演習問題の解答
 * [全 79 問の解答・解説をまとめた PDF](https://github.com/E869120/kyopro-tessoku/blob/main/editorial/Editorial_All.pdf)
 
-章ごとの解説や C++ のソースコード・1～8 章の Python のソースコードは以下のリンクから閲覧できます。9 章および力試し問題の Python のソースコードは 10/4 頃までお待ちください。
+章ごとの解説や C++・Python のソースコードは以下のリンクから閲覧できます。
 
 | 章 | タイトル | 解説・ソースコードのリンク |
 |:---|:---|:---|
