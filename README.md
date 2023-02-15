@@ -1,3 +1,7 @@
+**2023/2/15 追記：演習問題の解説 PDF について、正誤表を追加しました。**
+
+<br />
+
 ## 1. 概要
 本リポジトリは、拙著『競技プログラミングの鉄則 ～アルゴリズムと思考力を高める 77 の技術～』の補足資料です。主に以下の 3 つの内容が掲載されています。**特に、本の紙面には C++ のソースコードしか載っていませんが、サポートページには Python/Java も載っているので、ぜひご活用ください。**
 
@@ -18,6 +22,7 @@
 * [正誤表（0～4章）：最終更新日 2023/2/6](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap0-4.md)
 * [正誤表（5～7章）：最終更新日 2022/10/20](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap5-7.md)
 * [正誤表（8～10章）：最終更新日 2022/10/20](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
+* [正誤表（解説PDF）：最終更新日 2023/2/15](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_editorialPDF.md)
 
 ### コード
 9/30 更新：すべてのプログラムは、自動採点システムで正解判定（AC）となることが確認されています。
