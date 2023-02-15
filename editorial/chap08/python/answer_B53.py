@@ -1,7 +1,7 @@
 import heapq
 
 
-G = [list() for _ in range(375)] # G[i] は i 日目から始まる仕事の給料のリスト
+G = [list() for _ in range(2005)] # G[i] は i 日目から始まる仕事の給料のリスト
 
 # 入力
 N, D = map(int, input().split())
