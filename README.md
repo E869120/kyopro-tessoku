@@ -19,9 +19,9 @@
 本リポジトリの目次は以下の通りです。
 
 ### 正誤表
-* [正誤表（0～4章）：最終更新日 2023/2/6](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap0-4.md)
+* [正誤表（0～4章）：最終更新日 2023/7/21](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap0-4.md)
 * [正誤表（5～7章）：最終更新日 2022/10/20](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap5-7.md)
-* [正誤表（8～10章）：最終更新日 2022/10/20](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
+* [正誤表（8～10章）：最終更新日 2023/7/21](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_Chap8-10.md)
 * [正誤表（解説PDF）：最終更新日 2023/2/15](https://github.com/E869120/kyopro-tessoku/blob/main/errata/errata_editorialPDF.md)
 
 ### コード
